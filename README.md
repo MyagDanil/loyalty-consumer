@@ -34,15 +34,12 @@ internal/config – загрузка конфигурации из переме�
 
 Такой подход упрощает тестирование, сопровождение и масштабирование сервиса.
 
-Технологии
-Язык: Go (Golang)
-Сообщения: Kafka (consumer group, offset management)
-Хранение данных: PostgreSQL
-Кеш: Redis
-Контейнеризация: Docker / Docker Compose
-Логирование: logrus (JSON-формат)
-Валидация: go-playground/validator
-Контроль версий: Git
+![Go](https://img.shields.io/badge/Go-00ADD8?style=for-the-badge&logo=go&logoColor=white)
+![PostgreSQL](https://img.shields.io/badge/PostgreSQL-316192?style=for-the-badge&logo=postgresql&logoColor=white)
+![Redis](https://img.shields.io/badge/Redis-DC382D?style=for-the-badge&logo=redis&logoColor=white)
+![Kafka](https://img.shields.io/badge/Apache_Kafka-231F20?style=for-the-badge&logo=apache-kafka&logoColor=white)
+![Docker](https://img.shields.io/badge/Docker-2496ED?style=for-the-badge&logo=docker&logoColor=white)
+![GoLand](https://img.shields.io/badge/GoLand-0f0f0f?style=for-the-badge&logo=goland&logoColor=white)
 
 Запуск локально
 Требования
