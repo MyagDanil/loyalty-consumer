@@ -1,7 +1,7 @@
 [![Typing SVG](https://readme-typing-svg.herokuapp.com?color=%2336BCF7&lines=Golang+dev+from+Russia)](https://git.io/typing-svg)
 
 Loyalty Consumer
-Микросервис для обработки транзакций программы лояльности.
+Микросервис для обработки транзакций.
 Сервис читает события из Kafka, атомарно записывает их в PostgreSQL, обновляет баланс пользователя и кеширует его в Redis для быстрых чтений.
 
 Основные возможности
