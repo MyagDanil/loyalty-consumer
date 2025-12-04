@@ -64,15 +64,15 @@ cd loyalty-consumer
 docker compose up -d
 
 # Экспортируем базовые переменные окружения
-export POSTGRES_DSN="postgres://user:pass@localhost:5432/loyalty?sslmode=disable"
+```export POSTGRES_DSN="postgres://user:pass@localhost:5432/loyalty?sslmode=disable"
 export REDIS_ADDR="localhost:6379"
 export KAFKA_BROKERS="localhost:9092"
 export KAFKA_GROUP_ID="loyalty-consumer-group"
 export KAFKA_TOPIC="loyalty-transactions"
-export LOG_LEVEL="info"
+```export LOG_LEVEL="info"
 
 # Запускаем сервис
-go run ./cmd/consumer
+`go run ./cmd/consumer`
 Обработка сообщений
 Ожидается, что в Kafka-топике loyalty-transactions лежат сообщения формата JSON:
 
