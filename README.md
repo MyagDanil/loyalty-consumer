@@ -69,14 +69,15 @@ export REDIS_ADDR="localhost:6379"
 export KAFKA_BROKERS="localhost:9092"
 export KAFKA_GROUP_ID="loyalty-consumer-group"
 export KAFKA_TOPIC="loyalty-transactions"
-```export LOG_LEVEL="info"
+export LOG_LEVEL="info"
+```
 
 # Запускаем сервис
-`go run ./cmd/consumer`
+```go run ./cmd/consumer```
 Обработка сообщений
 Ожидается, что в Kafka-топике loyalty-transactions лежат сообщения формата JSON:
 
-json
+```json
 {
   "id": "uuid-транзакции",
   "user_id": "uuid-пользователя",
@@ -84,6 +85,7 @@ json
   "type": "purchase",
   "created_at": "2025-12-04T10:00:00Z"
 }
+```
 Пайплайн обработки:
 Consumer читает сообщение из Kafka.
 Handler десериализует JSON в models.Transaction и валидирует данные.
@@ -102,7 +104,7 @@ Handler десериализует JSON в models.Transaction и валидир�
 
 Тестирование
 Unit‑тесты для:
-models.Transaction.Validate();
+```models.Transaction.Validate();```
 методов store (insert/update/select) с моками;
 cache-слоя.
 
