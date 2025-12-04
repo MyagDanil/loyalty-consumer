@@ -51,6 +51,11 @@ Docker и Docker Compose
 
 Шаги
 
+## Быстрый старт
+
+![Shell Commands](https://img.shields.io/badge/terminal-setup%20commands-4EAA25?style=flat-square&logo=gnubash&logoColor=white)
+
+
 # Клонируем репозиторий
 git clone https://github.com/youruser/loyalty-consumer.git
 cd loyalty-consumer
